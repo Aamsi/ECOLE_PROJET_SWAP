@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:47:54 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/20 18:41:03 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/21 21:07:10 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	check_arguments(char **numbers)
 	while (numbers[i])
 	{
 		j = 0;
+		if (numbers[i][j] == '-')
+			j++;
 		while (numbers[i][j])
 		{
 			if (!ft_isdigit(numbers[i][j]))

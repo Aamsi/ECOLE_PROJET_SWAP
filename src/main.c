@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:47:56 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/21 20:22:54 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/21 21:05:38 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ int	main(int argc, char **argv)
 {
 	t_piles piles;
 
-	if (check_arguments(argv) < 0)
-		return (return_errors("Error"));
 	if (argc <= 1)
 		return (-1);
+	if (check_arguments(argv) < 0)
+		return (return_errors("Error"));
 
 	init_piles(&piles, argv + 1);
 	// print_debug(&piles);
