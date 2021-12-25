@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 19:14:37 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/20 19:48:37 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:00:18 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	*insert_first_pos(int *former_tab, int *new_tab, int to_copy, int len)
 
 int	*delete_first_pos(int *former_tab, int *new_tab, int len)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < len)
@@ -43,7 +43,7 @@ int	*delete_first_pos(int *former_tab, int *new_tab, int len)
 
 void	push_a(t_piles *piles)
 {
-	int tmp;
+	int	tmp;
 	int	*new_tab_a;
 	int	*new_tab_b;
 
@@ -58,14 +58,15 @@ void	push_a(t_piles *piles)
 	if (!new_tab_b)
 		return ;
 	tmp = piles->tab_b[0];
-	piles->tab_a = insert_first_pos(piles->tab_a, new_tab_a, tmp, piles->len_a - 1);
+	piles->tab_a = insert_first_pos(piles->tab_a, new_tab_a,
+			tmp, piles->len_a - 1);
 	piles->tab_b = delete_first_pos(piles->tab_b, new_tab_b, piles->len_b);
 	write_string("pa\n");
 }
 
 void	push_b(t_piles *piles)
 {
-	int tmp;
+	int	tmp;
 	int	*new_tab_a;
 	int	*new_tab_b;
 
@@ -80,7 +81,8 @@ void	push_b(t_piles *piles)
 	if (!new_tab_b)
 		return ;
 	tmp = piles->tab_a[0];
-	piles->tab_b = insert_first_pos(piles->tab_b, new_tab_b, tmp, piles->len_b - 1);
+	piles->tab_b = insert_first_pos(piles->tab_b, new_tab_b,
+			tmp, piles->len_b - 1);
 	piles->tab_a = delete_first_pos(piles->tab_a, new_tab_a, piles->len_a);
 	write_string("pb\n");
 }

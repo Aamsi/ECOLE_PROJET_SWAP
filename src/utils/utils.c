@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:51:43 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/21 21:02:37 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 17:55:14 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	write_character(char c)
 
 void	write_string(char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i])
@@ -31,7 +31,7 @@ void	write_string(char *s)
 
 int	get_len(char **s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i])

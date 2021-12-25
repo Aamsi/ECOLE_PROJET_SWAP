@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 18:26:21 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:45:56 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:01:29 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	find_quantiles(t_piles *piles)
 {
-	int *sorted_array;
+	int	*sorted_array;
 	int	len;
 	int	divided;
 

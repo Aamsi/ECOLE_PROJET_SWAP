@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:47:54 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/21 21:07:10 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:02:58 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	check_arguments(char **numbers)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 1;
 	while (numbers[i])

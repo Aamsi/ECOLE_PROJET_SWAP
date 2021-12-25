@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:47:11 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:45:24 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:04:25 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct s_piles
 	int	*tab_b;
 	int	len_a;
 	int	len_b;
-	int median;
+	int	median;
 	int	under_five;
 	int	under_500;
 	int	under_3;
@@ -42,7 +42,6 @@ typedef struct s_piles
 	int	q10;
 	int	q11;
 }				t_piles;
-
 
 int		check_arguments(char **numbers);
 void	write_string(char *s);
@@ -61,7 +60,6 @@ void	reverse_rotate_a(t_piles *piles);
 void	reverse_rotate_b(t_piles *piles);
 void	reverse_rotate_rotate(t_piles *piles);
 void	find_median(t_piles *piles);
-void	move_under_median_to_b(t_piles *piles);
 void	move_above_median_to_b(t_piles *piles);
 void	move_to_a(t_piles *piles);
 void	sort_numbers(t_piles *piles);
@@ -73,6 +71,6 @@ int		*sort_array(t_piles *piles);
 void	solve_under_500(t_piles *piles);
 void	find_quantiles(t_piles *piles);
 int		get_smallest(t_piles *piles);
-void    print_debug(t_piles *piles);
+void	print_debug(t_piles *piles);
 
 #endif

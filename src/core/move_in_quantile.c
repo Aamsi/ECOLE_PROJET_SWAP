@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 18:41:37 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:46:35 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:00:32 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	get_bot_index(t_piles *piles, int q_min, int q_max)
 {
-	int i;
+	int	i;
 
 	i = piles->len_a - 1;
 	while (i >= 0)
@@ -28,7 +28,7 @@ static int	get_bot_index(t_piles *piles, int q_min, int q_max)
 
 static int	get_top_index(t_piles *piles, int q_min, int q_max)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < piles->len_a)

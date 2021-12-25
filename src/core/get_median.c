@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 21:02:39 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/22 23:55:37 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:02:13 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	*copy_array(t_piles *piles)
 {
-	int i;
+	int	i;
 	int	*new_tab;
 
 	new_tab = malloc(sizeof(int) * piles->len_a);
@@ -31,9 +31,9 @@ int	*copy_array(t_piles *piles)
 
 int	*sort_array(t_piles *piles)
 {
-	int i;
-	int j;
-	int tmp;
+	int	i;
+	int	j;
+	int	tmp;
 	int	*new_tab;
 
 	new_tab = copy_array(piles);
@@ -61,7 +61,7 @@ int	*sort_array(t_piles *piles)
 void	find_median(t_piles *piles)
 {
 	int	*sorted_array;
-	int len;
+	int	len;
 
 	len = piles->len_a;
 	sorted_array = sort_array(piles);

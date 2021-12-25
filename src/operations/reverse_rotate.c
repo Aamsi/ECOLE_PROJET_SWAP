@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 19:57:11 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/20 20:07:19 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 17:58:29 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	reverse_rotate_a(t_piles *piles)
 	tmp = piles->tab_a[piles->len_a - 1];
 	new_tab[0] = tmp;
 	i = 1;
-	while(i < piles->len_a)
+	while (i < piles->len_a)
 	{
 		new_tab[i] = piles->tab_a[i - 1];
 		i++;
@@ -50,7 +50,7 @@ void	reverse_rotate_b(t_piles *piles)
 	tmp = piles->tab_b[piles->len_b - 1];
 	new_tab[0] = tmp;
 	i = 1;
-	while(i < piles->len_b)
+	while (i < piles->len_b)
 	{
 		new_tab[i] = piles->tab_b[i - 1];
 		i++;

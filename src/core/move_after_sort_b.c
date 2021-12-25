@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 19:48:16 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 16:01:49 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:01:17 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	get_bigger(t_piles *piles)
 {
-	int i;
+	int	i;
 	int	bigger;
 
 	i = 0;
@@ -30,7 +30,7 @@ int	get_bigger(t_piles *piles)
 
 static int	get_bot_index(t_piles *piles, int bigger)
 {
-	int i;
+	int	i;
 
 	i = piles->len_b - 1;
 	while (i >= 0)
@@ -42,9 +42,9 @@ static int	get_bot_index(t_piles *piles, int bigger)
 	return (-1);
 }
 
-static int get_top_index(t_piles *piles, int bigger)
+static int	get_top_index(t_piles *piles, int bigger)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < piles->len_b)
@@ -83,9 +83,9 @@ int	reverse(t_piles *piles, int bigger)
 
 void	move_to_a(t_piles *piles)
 {
-	int bigger;
-	int i;
-	int is_reverse;
+	int	bigger;
+	int	i;
+	int	is_reverse;
 
 	bigger = get_bigger(piles);
 	is_reverse = reverse(piles, bigger);

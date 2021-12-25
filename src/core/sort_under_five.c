@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 21:22:34 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:15:45 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 18:02:48 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	sort_under_three(t_piles *piles)
 {
-	int top;
-	int middle;
-	int bot;
+	int	top;
+	int	middle;
+	int	bot;
 
 	bot = piles->tab_a[2];
 	middle = piles->tab_a[1];
@@ -39,9 +39,9 @@ void	sort_under_three(t_piles *piles)
 	}
 }
 
-int		get_smallest(t_piles *piles)
+int	get_smallest(t_piles *piles)
 {
-	int smallest;
+	int	smallest;
 	int	i;
 
 	smallest = piles->tab_a[0];
@@ -57,7 +57,7 @@ int		get_smallest(t_piles *piles)
 
 void	sort_under_four(t_piles *piles)
 {
-	int smallest;
+	int	smallest;
 
 	smallest = get_smallest(piles);
 	while (piles->tab_a[0] != smallest)

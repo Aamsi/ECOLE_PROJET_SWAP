@@ -11,9 +11,7 @@ SRCS		= ${SRCFOLD}main.c \
 				${SRCFOLD}operations/rotate.c \
 				${SRCFOLD}operations/reverse_rotate.c \
 				${SRCFOLD}core/get_median.c \
-				${SRCFOLD}core/move_under_median.c \
 				${SRCFOLD}core/move_after_sort_b.c \
-				${SRCFOLD}core/move_above_median.c \
 				${SRCFOLD}core/sort_under_five.c \
 				${SRCFOLD}core/route_algo.c \
 				${SRCFOLD}core/move_in_quantile.c \
