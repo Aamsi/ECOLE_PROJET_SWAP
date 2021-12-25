@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 17:47:11 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:15:26 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 17:45:24 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,12 @@ typedef struct s_piles
 	int	q3;
 	int	q4;
 	int	q5;
+	int	q6;
+	int	q7;
+	int	q8;
+	int	q9;
+	int	q10;
+	int	q11;
 }				t_piles;
 
 

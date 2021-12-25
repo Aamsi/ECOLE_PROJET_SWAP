@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/22 18:41:37 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/25 17:14:13 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/25 17:46:35 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,28 +86,16 @@ void	move_in_quantile_to_b(t_piles *piles, int q_min, int q_max)
 
 void	solve_under_500(t_piles *piles)
 {
-	move_in_quantile_to_b(piles, piles->q4, piles->q5 + 1);
-	// print_debug(piles);
-	move_to_a(piles);
-	move_in_quantile_to_b(piles, piles->q3, piles->q4 + 1);
-	// print_debug(piles);
-	move_to_a(piles);
-	// print_debug(piles);
+	move_in_quantile_to_b(piles, piles->q10, piles->q11 + 1);
+	move_in_quantile_to_b(piles, piles->q9, piles->q10);
+	move_in_quantile_to_b(piles, piles->q8, piles->q9);
+	move_in_quantile_to_b(piles, piles->q7, piles->q8);
+	move_in_quantile_to_b(piles, piles->q6, piles->q7);
+	move_in_quantile_to_b(piles, piles->q5, piles->q6);
+	move_in_quantile_to_b(piles, piles->q4, piles->q5);
+	move_in_quantile_to_b(piles, piles->q3, piles->q4);
 	move_in_quantile_to_b(piles, piles->q2, piles->q3);
-	// print_debug(piles);
-	move_to_a(piles);
-	// print_debug(piles);
 	move_in_quantile_to_b(piles, piles->q1, piles->q2);
-	// print_debug(piles);
-	move_to_a(piles);
-	// print_debug(piles);
 	move_in_quantile_to_b(piles, get_smallest(piles), piles->q1);
-	// print_debug(piles);
 	move_to_a(piles);
-	// print_debug(piles);
-	move_above_median_to_b(piles);
-	move_to_a(piles);
-	move_under_median_to_b(piles);
-	move_to_a(piles);
-	// print_debug(piles);
 }
