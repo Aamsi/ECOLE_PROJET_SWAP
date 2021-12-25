@@ -13,7 +13,11 @@ SRCS		= ${SRCFOLD}main.c \
 				${SRCFOLD}core/get_median.c \
 				${SRCFOLD}core/move_under_median.c \
 				${SRCFOLD}core/move_after_sort_b.c \
-				${SRCFOLD}core/move_above_median.c
+				${SRCFOLD}core/move_above_median.c \
+				${SRCFOLD}core/sort_under_five.c \
+				${SRCFOLD}core/route_algo.c \
+				${SRCFOLD}core/move_in_quantile.c \
+				${SRCFOLD}core/get_quantiles.c
 
 OBJS		= ${SRCS:.c=.o}
 

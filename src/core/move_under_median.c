@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 21:22:00 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/21 20:17:09 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/22 18:16:34 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static int get_top_index(t_piles *piles)
 	return (-1);
 }
 
-static int	under_median_exists(t_piles *piles)
+int	under_median_exists(t_piles *piles)
 {
 	int	index_top;
 	int	index_bot;
@@ -80,7 +80,6 @@ void	move_under_median_to_b(t_piles *piles)
             reverse_rotate_a(piles);
 		else
 			rotate_a(piles);
-		// print_debug(piles);
 		reverse = under_median_exists(piles);
     }
 }

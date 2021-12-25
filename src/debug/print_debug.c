@@ -21,5 +21,10 @@ void    print_debug(t_piles *piles)
         i++;
     }
     printf("\n");
-    printf("MEDIAN: %d\n\n", piles->median);
+    printf("MEDIAN: %d\n", piles->median);
+    printf("Q1: %d\n", piles->q1);
+    printf("Q2: %d\n", piles->q2);
+    printf("Q3: %d\n", piles->q3);
+    printf("Q4: %d\n", piles->q4);
+    printf("Q5: %d\n\n", piles->q5);
 }

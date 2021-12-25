@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 21:02:39 by iouali            #+#    #+#             */
-/*   Updated: 2021/12/20 21:20:34 by iouali           ###   ########.fr       */
+/*   Updated: 2021/12/22 23:55:37 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ void	find_median(t_piles *piles)
 	len = piles->len_a;
 	sorted_array = sort_array(piles);
 	if (!sorted_array)
-		return free(sorted_array);
+		return ;
 	piles->median = sorted_array[len / 2];
 	free(sorted_array);
 }
